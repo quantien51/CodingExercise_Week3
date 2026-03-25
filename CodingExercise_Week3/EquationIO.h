@@ -13,7 +13,7 @@ void inputFourthDeg(double& a, double& b, double& c);
 
 //In ra phuong trinh nguoi dung nhap va ket qua
 
-void printResultFirstDeg(int nSolution, double x1);
-void printResultSecDeg(int nSolution, double x1, double x2);
-void printResultThirdDeg(int nSolution, double x1, double x2, double x3);
-void printResultFourthDeg(int nSolution, double x1, double x2, double x3, double x4);
+void outputFirstDeg(int nSolution, double x1);
+void outputSecDeg(int nSolution, double x1, double x2);
+void outputThirdDeg(int nSolution, double x1, double x2, double x3);
+void outputFourthDeg(int nSolution, double x1, double x2, double x3, double x4);
