@@ -20,25 +20,25 @@ int main() {
         case 1:
             inputFirstDeg(a, b);
             nSolution = EqFirstDeg(a, b, x1);
-            printResultFirstDeg(nSolution, x1);
+            outputFirstDeg(nSolution, x1);
             break;
 
         case 2:
             inputSecDeg(a, b, c);
             nSolution = EqSecDeg(a, b, c, x1, x2);
-            printResultSecDeg(nSolution, x1, x2);
+            outputSecDeg(nSolution, x1, x2);
             break;
 
         case 3:
             inputThirdDeg(a, b, c, d);
             nSolution = EqThirdDeg(a, b, c, d, x1, x2, x3);
-            printResultThirdDeg(nSolution, x1, x2, x3);
+            outputThirdDeg(nSolution, x1, x2, x3);
             break;
 
         case 4:
             inputFourthDeg(a, b, c);
             nSolution = EqFourthDeg(a, b, c, x1, x2, x3, x4);
-            printResultFourthDeg(nSolution, x1, x2, x3, x4);
+            outputFourthDeg(nSolution, x1, x2, x3, x4);
             break;
 
         case 5:
