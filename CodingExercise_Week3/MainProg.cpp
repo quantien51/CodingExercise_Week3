@@ -44,6 +44,9 @@ int main() {
         case 5:
             cout << "Thoat chuong trinh thanh cong!\n";
             return 0;
-        }
+        default:
+            cout << "Lua chon khong hop le. Moi thay nhap lai." << endl;
+            continue;
+        }break;
     }
 }
