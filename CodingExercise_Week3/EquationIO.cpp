@@ -37,7 +37,10 @@ void inputThirdDeg(double& a, double& b, double& c, double& d)
 
 void inputFourthDeg(double& a, double& b, double& c)
 {
-	//
+	cout << "Nhap lan luot a, b, c:" << endl;
+	cin >> a >> b >> c;
+	cout << endl;
+
 }
 
 void outputFirstDeg(int nSolution, double x1) {
@@ -54,4 +57,30 @@ void outputThirdDeg(int nSolution, double x1, double x2, double x3) {
 
 void outputFourthDeg(int nSolution, double x1, double x2, double x3, double x4) {
 	// 
+	cout << "Phuong trinh co " << nSolution << " nghiem:" << endl;
+	if (nSolution == 0 || nSolution > 4) {
+		cout << "Phuong trinh vo nghiem." << endl;
+	}
+		
+	if (nSolution == 1) {
+		cout << "x1 = " << x1 << endl;
+	}
+	
+	if (nSolution == 2) {
+		cout << "x1 = " << x1 << endl;
+		cout << "x2 = " << x2 << endl;
+	}
+
+	if (nSolution == 3) {
+		cout << "x1 = " << x1 << endl;
+		cout << "x2 = " << x2 << endl;
+		cout << "x3 = " << x3 << endl;
+	}
+
+	if (nSolution == 4) {
+		cout << "x1 = " << x1 << endl;
+		cout << "x2 = " << x2 << endl;
+		cout << "x3 = " << x3 << endl;
+		cout << "x4 = " << x4 << endl;
+	}
 }
