@@ -1,6 +1,7 @@
 #include "Equation.h"
 #include "EquationIO.h"
 #include <iostream>
+#include <iomanip> // Thu vien de quan ly dinh dang dau ra (lam tron so thap phan)
 
 using namespace std;
 
@@ -32,7 +33,19 @@ void inputSecDeg(double& a, double& b, double& c)
 
 void inputThirdDeg(double& a, double& b, double& c, double& d)
 {
-	//
+	cout << "\n--- GIAI PHUONG TRINH BAC BA ---" << endl;
+	cout << "Dang: ax^3 + bx^2 + cx + d = 0" << endl;
+
+	do {
+		cout << "Moi thay nhap bien so a (a != 0): "; cin >> a;
+		if (a == 0) cout << "Loi: a phai khac 0!" << endl;
+	} while (a == 0);
+
+	cout << "Moi thay nhap bien so b: "; cin >> b;
+	cout << "Moi thay nhap bien so c: "; cin >> c;
+	cout << "Moi thay nhap bien so d: "; cin >> d;
+
+	cout << "\nPhuong trinh: (" << a << ")x^3 + (" << b << ")x^2 + (" << c << ")x + (" << d << ") = 0" << endl;
 }
 
 void inputFourthDeg(double& a, double& b, double& c)
@@ -48,10 +61,29 @@ void outputSecDeg(int nSolution, double x1, double x2) {
 	// 
 }
 
-void outputThirdDeg(int nSolution, double x1, double x2, double x3) {
-	// 
+void outputThirdDeg(int nSolution, double x1, double x2, double x3) 
+{
+		cout << "Ket qua giai phuong trinh: " << endl;
+		if (nSolution == 1) {
+			cout << "Phuong trinh co 1 nghiem thuc duy nhat: x = " << setprecision(4) << x1 << endl;
+		}
+		else if (nSolution == 2) {
+			cout << "Phuong trinh co nghiem boi: " << endl;
+			cout << "x1 = " << setprecision(4) << x1 << endl;
+			cout << "x2 = x3 = " << setprecision(4) << x2 << endl;
+		}
+		else if (nSolution == 3) {
+			cout << "Phuong trinh co 3 nghiem thuc phan biet: " << endl;
+			cout << "x1 = " << setprecision(4) << x1 << endl;
+			cout << "x2 = " << setprecision(4) << x2 << endl;
+			cout << "x3 = " << setprecision(4) << x3 << endl;
+		}
+		else {
+			cout << "Co loi xay ra hoac he so không hop le." << endl;
+		}
+		cout << "------------------------------------------\n";
 }
 
-void outputFourthDeg(int nSolution, double x1, double x2, double x3, double x4) {
+	void outputFourthDeg(int nSolution, double x1, double x2, double x3, double x4) {
 	// 
 }
