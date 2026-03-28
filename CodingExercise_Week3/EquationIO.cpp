@@ -28,8 +28,8 @@ void inputFirstDeg(double& a, double& b)
 void inputSecDeg(double& a, double& b, double& c)
 {
 	cout << "Moi thay nhap cac so a b c :";
-	cout << "Phuong trinh bac hai: " << a << "x^2 + " << b << "x + " << c << " = 0\n";
 	cin >> a >> b >> c;
+	cout << "Phuong trinh bac hai: " << a << "x^2 + " << b << "x + " << c << " = 0\n";
 }
 
 void inputThirdDeg(double& a, double& b, double& c, double& d)
