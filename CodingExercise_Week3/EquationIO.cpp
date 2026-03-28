@@ -28,7 +28,9 @@ void inputFirstDeg(double& a, double& b)
 
 void inputSecDeg(double& a, double& b, double& c)
 {
-	//
+	cout << "Moi thay nhap cac so a b c :";
+	cin >> a >> b >> c;
+	cout << "Phuong trinh bac hai: " << a << "x^2 + " << b << "x + " << c << " = 0\n";
 }
 
 void inputThirdDeg(double& a, double& b, double& c, double& d)
@@ -58,7 +60,20 @@ void outputFirstDeg(int nSolution, double x1) {
 }
 
 void outputSecDeg(int nSolution, double x1, double x2) {
-	// 
+	if (nSolution == 0) {
+		cout << "Phuong trinh vo nghiem" << endl;
+	}
+	else if (nSolution == 1) {
+		cout << "Phuong trinh co nghiem kep: x = " << x1 << endl;
+	}
+	else if (nSolution == 2) {
+		cout << "Phuong trinh co 2 nghiem phan biet: " << endl;
+		cout << "x1 = " << x1 << endl;
+		cout << "x2 = " << x2 << endl;
+	}
+	else {
+		cout << "Phuong trinh vo so nghiem" << endl;
+	}
 }
 
 void outputThirdDeg(int nSolution, double x1, double x2, double x3) 
