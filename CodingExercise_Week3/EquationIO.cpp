@@ -27,7 +27,7 @@ void inputFirstDeg(double& a, double& b)
 
 void inputSecDeg(double& a, double& b, double& c)
 {
-	cout << "Nhap a, b, c: ";
+	cout << "Moi thay nhap cac so a b c ";
 	cin >> a >> b >> c;
 }
 
