@@ -1,7 +1,7 @@
 #include "Equation.h"
 #include "EquationIO.h"
 #include <iostream>
-#include <iomanip>
+#include <iomanip> // Thu vien de quan ly dinh dang dau ra (lam tron so thap phan)
 
 using namespace std;
 

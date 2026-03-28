@@ -1,6 +1,6 @@
 #include "Equation.h"
 #include <cmath>
-#define PI 3.14159265358979323846
+#define PI 3.14159265358979323846 // Dinh nghia so PI chinh xac de tinh toan luong giac cho phuong trinh bac 3
 
 int EqFirstDeg(double a, double b, double& x) {
     //
