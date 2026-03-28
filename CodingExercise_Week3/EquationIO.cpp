@@ -22,10 +22,10 @@ int layYeuCauNguoiDung() {
 
 void inputFirstDeg(double& a, double& b)
 {
-	cout << "--- Nhap he so cho ax + b = 0 ---" << endl;
-	cout << "Nhap a: "; cin >> a;
-	cout << "Nhap b: "; cin >> b;
-}
+	cout << "Moi thay nhap cac so a b ";
+	cin >> a >> b; 
+	cout << "Phuong trinh bac nhat: (" << a << ")x + (" << b << ") = 0\n";
+ }
 
 void inputSecDeg(double& a, double& b, double& c)
 {
