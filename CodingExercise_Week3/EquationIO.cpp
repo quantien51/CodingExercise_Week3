@@ -42,7 +42,7 @@ void inputThirdDeg(double& a, double& b, double& c, double& d)
 	} while (a == 0);
 
 	cout << "Moi thay nhap bien so b: "; cin >> b;
-	cout << "Moi thay nhap bien so b: "; cin >> c;
+	cout << "Moi thay nhap bien so c: "; cin >> c;
 	cout << "Moi thay nhap bien so d: "; cin >> d;
 
 	cout << "\nPhuong trinh: (" << a << ")x^3 + (" << b << ")x^2 + (" << c << ")x + (" << d << ") = 0" << endl;
