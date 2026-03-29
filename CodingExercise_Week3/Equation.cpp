@@ -3,8 +3,26 @@
 #define PI 3.14159265358979323846 // Dinh nghia so PI chinh xac de tinh toan luong giac cho phuong trinh bac 3
 
 int EqFirstDeg(double a, double b, double& x) {
-    //
-    return 0;
+	int nSolution;
+	if (a != 0)
+	{
+		x = -b / a;
+		nSolution = 1;
+	}
+	else
+	{
+		x = 0;
+		if (b == 0)
+		{
+			nSolution = Undetermined;
+		}
+		else
+		{
+			nSolution = NoSolution;
+		}
+	}
+	return nSolution;
+    
 }
 
 int EqSecDeg(double a, double b, double c, double& x1, double& x2) {

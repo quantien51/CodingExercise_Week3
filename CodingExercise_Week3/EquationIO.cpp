@@ -23,8 +23,10 @@ int layYeuCauNguoiDung() {
 
 void inputFirstDeg(double& a, double& b)
 {
-	//
-}
+	cout << "Moi thay nhap cac so a b ";
+	cin >> a >> b; 
+	cout << "Phuong trinh bac nhat: (" << a << ")x + (" << b << ") = 0\n";
+ }
 
 void inputSecDeg(double& a, double& b, double& c)
 {
@@ -56,7 +58,15 @@ void inputFourthDeg(double& a, double& b, double& c)
 }
 
 void outputFirstDeg(int nSolution, double x1) {
-	// 
+	if (nSolution == -1) {
+		cout << "Phuong trinh co vo so nghiem." << endl;
+	}
+	else if (nSolution == 0) {
+		cout << "Phuong trinh vo nghiem." << endl;
+	}
+	else if (nSolution == 1) {
+		cout << "Phuong trinh co mot nghiem duy nhat: x = " << x1 << endl;
+	}
 }
 
 void outputSecDeg(int nSolution, double x1, double x2) {
